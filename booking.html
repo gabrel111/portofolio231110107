@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Lapangan - FutsalMania</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #032bcd; color: #333; }
+    header, footer { background-color: #0e3c72; color: white; padding: 15px 20px; }
+    nav ul { list-style: none; display: flex; gap: 15px; padding: 0; margin: 0; }
+    nav ul li a { color: white; text-decoration: none; }
+    .container { max-width: 600px; margin: 40px auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    input, select, textarea, button {
+      width: 100%; margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc;
+    }
+    button { background-color: #0e3c72; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><strong>FutsalMania</strong></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="booking.html">Booking</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Form Booking Lapangan</h2>
+    <form>
+      <label>Nama Lengkap</label>
+      <input type="text" required>
+
+      <label>No. Telepon</label>
+      <input type="tel" required>
+
+      <label>Tanggal Booking</label>
+      <input type="date" required>
+
+      <label>Jam Booking</label>
+      <select>
+        <option>08:00 - 10:00</option>
+        <option>10:00 - 12:00</option>
+        <option>13:00 - 15:00</option>
+        <option>15:00 - 17:00</option>
+        <option>19:00 - 21:00</option>
+      </select>
+
+      <label>Catatan</label>
+      <textarea rows="3"></textarea>
+
+      <button type="submit">Kirim Booking</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 FutsalMania | Hubungi: 0812-5845-7126</p>
+  </footer>
+
+</body>
+</html>
